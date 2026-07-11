@@ -1,0 +1,222 @@
+[
+  {
+    "symbol": "002202",
+    "name": "金风科技",
+    "label": "金风科技\nSMA5/15",
+    "short_ma": 5,
+    "long_ma": 15,
+    "annualized_return": 148.57,
+    "sharpe_ratio": 1.898,
+    "max_drawdown": -33.67,
+    "excess_return": -18.72
+  },
+  {
+    "symbol": "002202",
+    "name": "金风科技",
+    "label": "金风科技\nSMA5/20",
+    "short_ma": 5,
+    "long_ma": 20,
+    "annualized_return": 157.03,
+    "sharpe_ratio": 1.911,
+    "max_drawdown": -33.33,
+    "excess_return": -24.78
+  },
+  {
+    "symbol": "002202",
+    "name": "金风科技",
+    "label": "金风科技\nSMA5/35",
+    "short_ma": 5,
+    "long_ma": 35,
+    "annualized_return": 122.59,
+    "sharpe_ratio": 1.625,
+    "max_drawdown": -42.37,
+    "excess_return": -40.18
+  },
+  {
+    "symbol": "002202",
+    "name": "金风科技",
+    "label": "金风科技\nSMA10/30",
+    "short_ma": 10,
+    "long_ma": 30,
+    "annualized_return": 101.82,
+    "sharpe_ratio": 1.49,
+    "max_drawdown": -39.34,
+    "excess_return": -59.57
+  },
+  {
+    "symbol": "600031",
+    "name": "三一重工",
+    "label": "三一重工\nSMA5/15",
+    "short_ma": 5,
+    "long_ma": 15,
+    "annualized_return": -20.11,
+    "sharpe_ratio": -0.938,
+    "max_drawdown": -22.8,
+    "excess_return": -11.0
+  },
+  {
+    "symbol": "600031",
+    "name": "三一重工",
+    "label": "三一重工\nSMA5/20",
+    "short_ma": 5,
+    "long_ma": 20,
+    "annualized_return": -25.85,
+    "sharpe_ratio": -1.306,
+    "max_drawdown": -29.87,
+    "excess_return": -17.8
+  },
+  {
+    "symbol": "600031",
+    "name": "三一重工",
+    "label": "三一重工\nSMA5/35",
+    "short_ma": 5,
+    "long_ma": 35,
+    "annualized_return": 0.08,
+    "sharpe_ratio": 0.032,
+    "max_drawdown": -15.31,
+    "excess_return": 10.36
+  },
+  {
+    "symbol": "600031",
+    "name": "三一重工",
+    "label": "三一重工\nSMA10/30",
+    "short_ma": 10,
+    "long_ma": 30,
+    "annualized_return": -6.44,
+    "sharpe_ratio": -0.254,
+    "max_drawdown": -16.68,
+    "excess_return": 4.39
+  },
+  {
+    "symbol": "000425",
+    "name": "徐工机械",
+    "label": "徐工机械\nSMA5/15",
+    "short_ma": 5,
+    "long_ma": 15,
+    "annualized_return": 59.82,
+    "sharpe_ratio": 2.038,
+    "max_drawdown": -12.23,
+    "excess_return": 9.73
+  },
+  {
+    "symbol": "000425",
+    "name": "徐工机械",
+    "label": "徐工机械\nSMA5/20",
+    "short_ma": 5,
+    "long_ma": 20,
+    "annualized_return": 48.63,
+    "sharpe_ratio": 1.58,
+    "max_drawdown": -13.68,
+    "excess_return": -11.13
+  },
+  {
+    "symbol": "000425",
+    "name": "徐工机械",
+    "label": "徐工机械\nSMA5/35",
+    "short_ma": 5,
+    "long_ma": 35,
+    "annualized_return": 40.49,
+    "sharpe_ratio": 1.355,
+    "max_drawdown": -16.55,
+    "excess_return": -22.11
+  },
+  {
+    "symbol": "000425",
+    "name": "徐工机械",
+    "label": "徐工机械\nSMA10/30",
+    "short_ma": 10,
+    "long_ma": 30,
+    "annualized_return": 50.49,
+    "sharpe_ratio": 1.613,
+    "max_drawdown": -18.13,
+    "excess_return": -6.75
+  },
+  {
+    "symbol": "600207",
+    "name": "安彩高科",
+    "label": "安彩高科\nSMA5/15",
+    "short_ma": 5,
+    "long_ma": 15,
+    "annualized_return": 12.21,
+    "sharpe_ratio": 0.434,
+    "max_drawdown": -36.56,
+    "excess_return": 8.96
+  },
+  {
+    "symbol": "600207",
+    "name": "安彩高科",
+    "label": "安彩高科\nSMA5/20",
+    "short_ma": 5,
+    "long_ma": 20,
+    "annualized_return": -1.69,
+    "sharpe_ratio": 0.145,
+    "max_drawdown": -33.46,
+    "excess_return": -5.86
+  },
+  {
+    "symbol": "600207",
+    "name": "安彩高科",
+    "label": "安彩高科\nSMA5/35",
+    "short_ma": 5,
+    "long_ma": 35,
+    "annualized_return": -31.08,
+    "sharpe_ratio": -0.656,
+    "max_drawdown": -39.14,
+    "excess_return": -24.88
+  },
+  {
+    "symbol": "600207",
+    "name": "安彩高科",
+    "label": "安彩高科\nSMA10/30",
+    "short_ma": 10,
+    "long_ma": 30,
+    "annualized_return": -14.81,
+    "sharpe_ratio": -0.176,
+    "max_drawdown": -32.38,
+    "excess_return": -15.74
+  },
+  {
+    "symbol": "000816",
+    "name": "智慧农业",
+    "label": "智慧农业\nSMA5/15",
+    "short_ma": 5,
+    "long_ma": 15,
+    "annualized_return": -39.07,
+    "sharpe_ratio": -1.84,
+    "max_drawdown": -36.1,
+    "excess_return": -11.43
+  },
+  {
+    "symbol": "000816",
+    "name": "智慧农业",
+    "label": "智慧农业\nSMA5/20",
+    "short_ma": 5,
+    "long_ma": 20,
+    "annualized_return": -21.01,
+    "sharpe_ratio": -0.734,
+    "max_drawdown": -30.11,
+    "excess_return": 2.0
+  },
+  {
+    "symbol": "000816",
+    "name": "智慧农业",
+    "label": "智慧农业\nSMA5/35",
+    "short_ma": 5,
+    "long_ma": 35,
+    "annualized_return": -11.59,
+    "sharpe_ratio": -0.307,
+    "max_drawdown": -23.61,
+    "excess_return": 13.15
+  },
+  {
+    "symbol": "000816",
+    "name": "智慧农业",
+    "label": "智慧农业\nSMA10/30",
+    "short_ma": 10,
+    "long_ma": 30,
+    "annualized_return": -5.2,
+    "sharpe_ratio": -0.101,
+    "max_drawdown": -21.16,
+    "excess_return": 15.91
+  }
+]

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+output/charts/
+data/_raw_*.json
+*.docx
+.DS_Store
