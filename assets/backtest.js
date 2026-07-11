@@ -350,8 +350,14 @@ function initDashboard() {
   document.getElementById('startDate').value = rows[0].d;
   document.getElementById('endDate').value = rows[rows.length - 1].d;
 
-  document.getElementById('shortMa').oninput = e => document.getElementById('shortVal').textContent = e.target.value;
-  document.getElementById('longMa').oninput = e => document.getElementById('longVal').textContent = e.target.value;
+  document.getElementById('shortMa').oninput = e => {
+    document.getElementById('shortVal').textContent = e.target.value;
+    applyParams();
+  };
+  document.getElementById('longMa').oninput = e => {
+    document.getElementById('longVal').textContent = e.target.value;
+    applyParams();
+  };
   document.getElementById('applyBtn').onclick = applyParams;
   document.getElementById('resetBtn').onclick = () => {
     document.getElementById('shortMa').value = 5;

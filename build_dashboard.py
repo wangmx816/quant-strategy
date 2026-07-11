@@ -161,7 +161,7 @@ def render_html(payload: dict) -> str:
   </main>
 </div>
 <script>const PAYLOAD = {data_json};</script>
-<script src="assets/backtest.js"></script>
+<script src="assets/backtest.js?v=20260711"></script>
 </body>
 </html>"""
 
