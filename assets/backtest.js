@@ -103,7 +103,7 @@ function runBacktest(rows, cfg) {
     drawdownPct.push((strategyNv[i] / peak - 1) * 100);
   }
 
-  const metrics = computeMetrics(strategyNv, benchmarkNv, trades, sliceDates.length);
+  const metrics = computeMetrics(strategyNv, benchmarkNv, trades, sliceDates.length, sliceDates);
   const buyDates = [], buyPrices = [], sellDates = [], sellPrices = [];
   for (let i = startIdx; i < rows.length; i++) {
     if (sig.buySignal[i]) { buyDates.push(dates[i]); buyPrices.push(closes[i]); }
@@ -123,7 +123,7 @@ function runBacktest(rows, cfg) {
   };
 }
 
-function computeMetrics(strategyNv, benchmarkNv, trades, nDays) {
+function computeMetrics(strategyNv, benchmarkNv, trades, nDays, dates) {
   const years = Math.max(nDays / 252, 1 / 252);
   const finalNv = strategyNv[strategyNv.length - 1] || 1;
   const benchFinal = benchmarkNv[benchmarkNv.length - 1] || 1;
@@ -140,6 +140,9 @@ function computeMetrics(strategyNv, benchmarkNv, trades, nDays) {
     const dd = strategyNv[i] / peak - 1;
     if (dd < maxDd) { maxDd = dd; ddEnd = i; ddStart = ddPeakIdx; }
   }
+
+  const ddStartDate = dates && dates[ddStart] ? dates[ddStart] : '';
+  const ddEndDate = dates && dates[ddEnd] ? dates[ddEnd] : '';
 
   const dailyRet = [];
   for (let i = 1; i < strategyNv.length; i++) {
@@ -173,7 +176,8 @@ function computeMetrics(strategyNv, benchmarkNv, trades, nDays) {
     benchmark_cumulative: round(benchCum, 2),
     benchmark_annualized: round(benchAnn, 2),
     excess_return: round(cumReturn - benchCum, 2),
-    max_dd_start: '', max_dd_end: '',
+    max_dd_start: ddStartDate,
+    max_dd_end: ddEndDate,
   };
 }
 
@@ -223,7 +227,7 @@ function renderKPI(m) {
   const cards = [
     ['年化收益率', fmtPct(m.annualized_return), '回测基准 ' + fmtPct(m.benchmark_annualized), m.annualized_return >= 0 ? 'pos' : 'neg'],
     ['夏普比率', m.sharpe_ratio.toFixed(3), m.sharpe_ratio >= 1 ? '较好' : '中等', ''],
-    ['最大回撤', m.max_drawdown.toFixed(2) + '%', '相对历史最高净值', 'neg'],
+    ['最大回撤', m.max_drawdown.toFixed(2) + '%', m.max_dd_start && m.max_dd_end ? `${m.max_dd_start} ~ ${m.max_dd_end}` : '相对历史最高净值', 'neg'],
     ['胜率', m.win_rate.toFixed(1) + '%', m.trade_count + ' 笔交易，盈亏比 ' + m.profit_loss_ratio, ''],
   ];
   cards.forEach(([label, value, hint, cls]) => {
