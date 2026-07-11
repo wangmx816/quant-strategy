@@ -5,7 +5,6 @@
 from __future__ import annotations
 
 import json
-import shutil
 from pathlib import Path
 
 import pandas as pd
@@ -172,9 +171,6 @@ def main() -> None:
     payload = build_payload(stock_data)
     OUT_HTML.write_text(render_html(payload), encoding="utf-8")
     OUT_ASSETS.mkdir(parents=True, exist_ok=True)
-    src_js = ROOT / "assets" / "backtest.js"
-    if src_js.exists():
-        shutil.copy2(src_js, OUT_ASSETS / "backtest.js")
     print(f"html={OUT_HTML}")
     print(f"pages={PAGES_URL}")
     print("模式: 浏览器端实时回测")
